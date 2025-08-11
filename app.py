@@ -24,7 +24,7 @@ def load_data():
     # To do: Completar la función 
     df1 = pd.read_csv("datos_energia.csv")
     # Convertir la fecha a tipo datetime
-    df1['time'] = pd.to_datetime(df['time'])
+    df1['time'] = pd.to_datetime(df1['time'])
     # Columna fecha como índice
     df1.set_index('time', inplace=True)
     
